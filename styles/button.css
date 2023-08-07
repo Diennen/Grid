@@ -1,0 +1,44 @@
+/* Общие стили для всех кнопок */
+.primary-button,
+.primary-button-corner,
+.default-button {
+  cursor: pointer;  
+  font-size: 24px;
+  font-family: var(--font-family-B);
+  border-radius: 16px;
+}
+
+/* Общие стили для главных кнопок */
+.primary-button,
+.primary-button-corner {
+  border: none;
+  color: var(--color-white);
+  background: var(--color-purple-dark);
+  transition: var(--animation);
+}
+
+/* Общие стили для главных кнопок при наведении курсором и tab */
+.primary-button:hover,
+.primary-button-corner:hover,
+.primary-button:focus,
+.primary-button-corner:focus {
+  background: var(--color-purple-light);
+}
+
+.primary-button-corner {
+  border-radius: 999px;
+}
+
+/* Отдельные стили для default кнопок */
+.default-button {
+  background: transparent;
+  border: 1px solid var(--color-gray-32);
+  color: var(--color-purple-dark);
+  transition: var(--animation);
+}
+
+.default-button:hover,
+.default-button:focus {
+  color: var(--color-purple-light);
+  border-color: var(--color-gray-24);
+}
